@@ -1,0 +1,11 @@
+installer mingw get-setup.exe la bas https://sourceforge.net/projects/mingw/files/Installer/
+une fois qu'il a parler coche les cases 
+ mingw 	base 
+	devellopper tools
+	gcc g++
+	msys-base
+
+ajoute le bin de mgw au path (dans C:/MinGW/bin)
+
+fais toi plaisir : g++ src/main.cpp -o bin/main.exe -I include/SDL2 -L lib -lmingw32 -lSDL2main -lSDL2 -mwindows
+	(en ayant cd dans momo biensur)
